@@ -1,6 +1,6 @@
 class sum_solution():
 
-    def sum(self,x,y):
+    def compute(self,x,y):
         if ((x >= 0 and x <=100) and
             (y >= 0 and y <=100)):  
             return int(x+y)
@@ -12,5 +12,6 @@ class sum_solution():
 class one():
     def get(self):
         return 1
+
 
 
