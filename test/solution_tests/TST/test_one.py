@@ -1,4 +1,4 @@
-from solutions.TST import one
+from solutions.sum_solutions import one
 
 
 class TestSum():
