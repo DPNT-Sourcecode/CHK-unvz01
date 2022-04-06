@@ -1,4 +1,0 @@
-
-
-class SumSolutions():
-    def sum()
