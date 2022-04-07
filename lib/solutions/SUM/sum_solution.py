@@ -5,6 +5,3 @@ def compute(x,y):
         return int(x+y)
     else:
         raise Exception('x and y must be integers between 0-100')
-
-
-
