@@ -13,6 +13,9 @@ def checkout(skus):
         'D':15,
     }
     total = 0
+    for item in skus:
+        if item not in prices:
+            return -1
     for item in prices.items():
         occurrences = skus.count(item[0])
         if item[0] == 'A':
@@ -30,5 +33,6 @@ def checkout(skus):
         elif item[0] == 'D':
             total += occurrences*prices[item[0]]
     return total
+
 
 
