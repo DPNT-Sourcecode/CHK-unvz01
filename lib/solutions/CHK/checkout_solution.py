@@ -11,6 +11,7 @@ def checkout(skus):
         'B':30,
         'C':20,
         'D':15,
+        'E':40,
     }
     total = 0
     for item in skus:
@@ -46,3 +47,4 @@ def checkout(skus):
         else:
             return -1
     return total
+
