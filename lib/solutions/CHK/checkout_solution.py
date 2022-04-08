@@ -33,6 +33,3 @@ def checkout(skus):
         elif item[0] == 'D':
             total += occurrences*prices[item[0]]
     return total
-
-
-
