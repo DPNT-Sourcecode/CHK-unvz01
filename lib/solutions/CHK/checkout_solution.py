@@ -23,7 +23,8 @@ def checkout(skus):
             if occurrences >= 5:
                 if (occurrences%5) >= 3:
                     rem  = (occurrences - 5*(occurrences//5))%3
-                    total += 200*(occurrences//5) + 130*((5*(occurrences//5) - (occurrences//3))//3) + (prices[item[0]]*(rem%3))
+                    rem2 = occurrences - 5*(occurrences//5) 
+                    total += 200*(occurrences//5) + 130*(rem2//3) + (prices[item[0]]*(rem))
                 else:
                     total += 200*(occurrences//5) + (prices[item[0]]*(occurrences%5))
             elif occurrences >= 3:
@@ -47,3 +48,4 @@ def checkout(skus):
         else:
             return -1
     return total
+
