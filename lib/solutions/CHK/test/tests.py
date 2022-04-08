@@ -1,4 +1,3 @@
-from subprocess import check_output
 import CHK.checkout_solution as chk
 import pytest
 
