@@ -20,7 +20,7 @@ def test_basket_6():
     assert chk.checkout('AAAAA') == 200
 
 def test_basket_7():
-    assert chk.checkout('AAAAAAA') == 250
+    assert chk.checkout('AAAAAAA') == 300
 
 def test_basket_8():
     assert chk.checkout('AAAAAAAA') == 330
