@@ -40,11 +40,12 @@ def checkout(skus):
         elif item[0] == 'D':
             total +=  occurrences*prices[item[0]]
         elif item[0] == 'E':
-            if occurrences >= 2:
+            if occurrences >= 2 and ('B' in skus):
                 total += -30*(occurrences//2) + (prices[item[0]]*(occurrences))
             else:
                 total += occurrences*prices[item[0]]
         else:
             return -1
     return total
+
 
