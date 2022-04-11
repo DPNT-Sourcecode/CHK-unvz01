@@ -39,3 +39,21 @@ def test_basket_12():
 
 def test_basket_13():
     assert chk.checkout('KK') == 150
+
+def test_basket_14():
+    assert chk.checkout('NNNM') == 120
+
+def test_basket_15():
+    assert chk.checkout('PPPPP') == 200
+
+def test_basket_16():   
+    assert chk.checkout('QQQ') == 80
+
+def test_basket_17():   
+    assert chk.checkout('UUU') == 80
+
+def test_basket_18():   
+    assert chk.checkout('VV') == 90
+
+def test_basket_19():   
+    assert chk.checkout('VVV') == 130
