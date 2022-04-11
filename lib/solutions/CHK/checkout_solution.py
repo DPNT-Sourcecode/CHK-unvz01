@@ -13,6 +13,12 @@ def checkout(skus):
         'D':15,
         'E':40,
         'F':10,
+        'G':20,
+        'H':10,
+        'I':35,
+        'J':60,
+        'K':80,
+        'L':
     }
     total = 0
     for item in skus:
@@ -57,5 +63,3 @@ def checkout(skus):
         else:
             return -1
     return total
-
-
