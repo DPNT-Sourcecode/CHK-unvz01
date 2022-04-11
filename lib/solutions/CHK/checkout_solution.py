@@ -3,8 +3,8 @@
 # noinspection PyUnusedLocal
 # skus = unicode string
 
-def compute_groups(skus):
-
+def compute_groups(skus,prices):
+    
 
 
 def checkout(skus):
@@ -60,6 +60,8 @@ def checkout(skus):
     u_to_remove = (skus.count('U')) // 4
     for i in range(u_to_remove):
         skus = skus.replace('U','',1)
+
+    total,skus = compute_groups(skus,prices)
 
     for item in prices.items():
         occurrences = skus.count(item[0])
@@ -127,9 +129,9 @@ def checkout(skus):
         elif item[0] == 'R':
             total += occurrences*prices[item[0]]
         elif item[0] == 'S':
-            total += occurrences*prices[item[0]]
+            pass
         elif item[0] == 'T':
-            total += occurrences*prices[item[0]]
+            pass
         elif item[0] == 'U':
             total += occurrences*prices[item[0]]
         elif item[0] == 'V':
@@ -142,7 +144,7 @@ def checkout(skus):
         elif item[0] == 'W':
             total += occurrences*prices[item[0]]
         elif item[0] == 'X':
-            total += occurrences*prices[item[0]]
+            pass
         elif item[0] == 'Y':
             pass
         elif item[0] == 'Z':
@@ -150,3 +152,4 @@ def checkout(skus):
         else:
             return -1
     return total
+
