@@ -4,6 +4,7 @@
 # skus = unicode string
 
 def compute_groups(skus,prices):
+    total = 0
     occs = (skus.count('S') + skus.count('T') + skus.count('X') +
             skus.count('Y') + skus.count('Z'))
     if occs < 3:
@@ -15,8 +16,26 @@ def compute_groups(skus,prices):
             for a in range(3):
                 # Z> S > T > X
                 try:
-                    skus.replace('M','',1)
-
+                    skus.replace('Z','',1)
+                    continue
+                except:
+                    pass
+                try:
+                    skus.replace('S','',1)
+                    continue
+                except:
+                    pass
+                try:
+                    skus.replace('T','',1)
+                    continue
+                except:
+                    pass
+                try:
+                    skus.replace('X','',1)
+                    continue
+                except:
+                    pass
+            total += 45
 
 
 def checkout(skus):
@@ -164,6 +183,7 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
 
 
