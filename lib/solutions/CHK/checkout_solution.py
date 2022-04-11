@@ -131,15 +131,10 @@ def checkout(skus):
         elif item[0] == 'U':
             total += occurrences*prices[item[0]]
         elif item[0] == 'V':
-            if occurrences >= 3:
-                if (occurrences%3) >= 2:
-                    rem  = (occurrences - 3*(occurrences//3))%2
-                    rem2 = occurrences - 3*(occurrences//3) 
-                    total += 130*(occurrences//3) + 90*(rem2//2) + (prices[item[0]]*(rem))
-                else:
-                    total += 130*(occurrences//2) + (prices[item[0]]*(occurrences%3))
-            elif occurrences >= 2:
+            if occurrences >= 2 and occurrences < 3:
                 total += 90*(occurrences//2) + (prices[item[0]]*(occurrences%2))
+            elif occurrences >= 3:
+                total += 130*(occurrences//3) + 90*((occurrences%10)//2) + (prices[item[0]]*((occurrences%3)%2))
             else:
                 total += occurrences*prices[item[0]]
         elif item[0] == 'W':
@@ -153,6 +148,7 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
 
 
