@@ -24,3 +24,9 @@ def test_basket_7():
 
 def test_basket_8():
     assert chk.checkout('AAAAAAAA') == 330
+
+def test_basket_9():
+    assert chk.checkout('EEEEBB') == 330
+
+def test_basket_10():
+    assert chk.checkout('ABCDECBAABCABBAAAEEAA') == 665

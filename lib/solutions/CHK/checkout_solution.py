@@ -17,6 +17,10 @@ def checkout(skus):
     for item in skus:
         if item not in prices:
             return -1
+    
+    b_to_remove = (skus.count('EE')) // 2
+    for i in range(b_to_remove):
+        skus = skus.replace('B','',1)
     for item in prices.items():
         occurrences = skus.count(item[0])
         if item[0] == 'A':
