@@ -44,7 +44,7 @@ def checkout(skus):
         'H':10,
         'I':35,
         'J':60,
-        'K':80,
+        'K':70,
         'L':90,
         'M':15,
         'N':40,
@@ -58,7 +58,7 @@ def checkout(skus):
         'V':50,
         'W':20,
         'X':17,
-        'Y':10,
+        'Y':20,
         'Z':21,
     }
     total = 0
@@ -177,9 +177,3 @@ def checkout(skus):
         else:
             return -1
     return total
-
-
-
-
-
-

@@ -85,4 +85,3 @@ def test_basket_25():
 
 def test_basket_26():
     assert chk.checkout('SSSSSSX') == 107
-
