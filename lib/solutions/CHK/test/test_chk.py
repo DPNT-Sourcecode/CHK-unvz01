@@ -77,3 +77,12 @@ def test_basket_23():
 def test_basket_23():
     assert chk.checkout('SSS') == 45
 
+def test_basket_24():
+    assert chk.checkout('SSS') == 45
+
+def test_basket_25():
+    assert chk.checkout('SSSS') == 65
+
+def test_basket_26():
+    assert chk.checkout('SSSSSSX') == 90
+

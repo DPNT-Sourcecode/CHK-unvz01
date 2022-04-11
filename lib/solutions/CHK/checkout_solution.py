@@ -15,26 +15,18 @@ def compute_groups(skus):
         for i in range(occs // 3):
             for a in range(3):
                 # Z> S > T > X
-                try:
-                    skus.replace('Z','',1)
+                if 'Z' in skus:
+                    skus = skus.replace('Z','',1)
                     continue
-                except:
-                    pass
-                try:
-                    skus.replace('S','',1)
+                if 'S' in skus:
+                    skus = skus.replace('S','',1)
                     continue
-                except:
-                    pass
-                try:
-                    skus.replace('T','',1)
+                if 'T' in skus:
+                    skuks = skus.replace('T','',1)
                     continue
-                except:
-                    pass
-                try:
-                    skus.replace('X','',1)
+                if 'X' in skus:
+                    skus = skus.replace('X','',1)
                     continue
-                except:
-                    pass
             total += 45
         print(total,skus)
     return total,skus
