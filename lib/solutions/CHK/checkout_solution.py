@@ -92,7 +92,7 @@ def checkout(skus):
             if occurrences >= 5 and occurrences < 10:
                 total += 45*(occurrences//5) + (prices[item[0]]*(occurrences%5))
             elif occurrences >= 10:
-                total += 80*(occurrences//10) + 45*((occurrences%10)//5) + (prices[item[0]]*(occurrences%5))
+                total += 80*(occurrences//10) + 45*((occurrences%10)//5) + (prices[item[0]]*((occurrences%10)%5))
             else:
                 total += occurrences*prices[item[0]]
         elif item[0] == 'I':
@@ -153,5 +153,6 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
 
