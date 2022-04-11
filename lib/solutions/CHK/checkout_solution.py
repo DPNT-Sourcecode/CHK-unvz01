@@ -9,7 +9,11 @@ def compute_groups(skus,prices):
     if occs < 3:
         return 0,skus
     else:
-        pass
+        # For every 3, add 45 to total and remove the 3 most
+        # expensive from basket
+        for i in range(occs // 3):
+            
+
 
 def checkout(skus):
     prices = {

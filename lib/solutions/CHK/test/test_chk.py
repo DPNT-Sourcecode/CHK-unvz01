@@ -74,3 +74,6 @@ def test_basket_23():
 def test_basket_23():
     assert chk.checkout('SS') == 40
 
+def test_basket_23():
+    assert chk.checkout('SSS') == 45
+
