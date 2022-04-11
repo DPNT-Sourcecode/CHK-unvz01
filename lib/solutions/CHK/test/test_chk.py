@@ -84,5 +84,5 @@ def test_basket_25():
     assert chk.checkout('SSSS') == 65
 
 def test_basket_26():
-    assert chk.checkout('SSSSSSX') == 90
+    assert chk.checkout('SSSSSSX') == 107
 

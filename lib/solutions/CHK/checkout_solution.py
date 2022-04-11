@@ -57,9 +57,9 @@ def checkout(skus):
         'U':40,
         'V':50,
         'W':20,
-        'X':90,
+        'X':17,
         'Y':10,
-        'Z':50,
+        'Z':21,
     }
     total = 0
     for item in skus:
