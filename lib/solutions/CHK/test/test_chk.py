@@ -107,4 +107,7 @@ def test_basket_27():
 def test_basket_29():
     assert chk.checkout('XYZYZ') == 82
 
+def test_basket_30():
+    assert chk.checkout('ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ') == 1602
+
 
