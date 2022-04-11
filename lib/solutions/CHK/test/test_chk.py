@@ -104,4 +104,7 @@ def test_basket_26():
 def test_basket_27():
     assert chk.checkout('STXS') == 62
 
+def test_basket_28():
+    assert chk.checkout('CXYZYZC') == 122
+
 
