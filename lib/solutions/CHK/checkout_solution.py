@@ -2,7 +2,9 @@
 
 # noinspection PyUnusedLocal
 # skus = unicode string
-from os import O_ACCMODE
+
+def compute_groups(skus):
+
 
 
 def checkout(skus):
@@ -142,14 +144,9 @@ def checkout(skus):
         elif item[0] == 'X':
             total += occurrences*prices[item[0]]
         elif item[0] == 'Y':
-            total += occurrences*prices[item[0]]
+            pass
         elif item[0] == 'Z':
-            total += occurrences*prices[item[0]]
+            pass
         else:
             return -1
     return total
-
-
-
-
-

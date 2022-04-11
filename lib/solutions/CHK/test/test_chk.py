@@ -70,5 +70,3 @@ def test_basket_22():
 def test_basket_23():   
     assert chk.checkout('VVVVVV') == 260
 
-
-
