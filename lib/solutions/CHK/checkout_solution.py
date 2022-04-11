@@ -12,7 +12,11 @@ def compute_groups(skus,prices):
         # For every 3, add 45 to total and remove the 3 most
         # expensive from basket
         for i in range(occs // 3):
-            
+            for a in range(3):
+                # Z> S > T > X
+                try:
+                    skus.replace('M','',1)
+
 
 
 def checkout(skus):
@@ -160,6 +164,7 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
 
 
