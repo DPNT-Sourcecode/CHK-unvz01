@@ -55,7 +55,7 @@ def checkout(skus):
     for i in range(q_to_remove):
         skus = skus.replace('Q','',1)
 
-    u_to_remove = (skus.count('U')) // 3
+    u_to_remove = (skus.count('U')) // 4
     for i in range(u_to_remove):
         skus = skus.replace('U','',1)
 
@@ -153,6 +153,7 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
 
 
