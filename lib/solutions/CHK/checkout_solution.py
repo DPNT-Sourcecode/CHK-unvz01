@@ -4,6 +4,10 @@
 # skus = unicode string
 
 def compute_groups(skus,prices):
+    occs = (skus.count('S') + skus.count('T') + skus.count('X') +
+            skus.count('Y') + skus.count('Z'))
+    if occs < 3:
+        return sku
     
 
 
@@ -129,9 +133,9 @@ def checkout(skus):
         elif item[0] == 'R':
             total += occurrences*prices[item[0]]
         elif item[0] == 'S':
-            pass
+            total += occurrences*prices[item[0]]
         elif item[0] == 'T':
-            pass
+            total += occurrences*prices[item[0]]
         elif item[0] == 'U':
             total += occurrences*prices[item[0]]
         elif item[0] == 'V':
@@ -144,12 +148,13 @@ def checkout(skus):
         elif item[0] == 'W':
             total += occurrences*prices[item[0]]
         elif item[0] == 'X':
-            pass
+            total += occurrences*prices[item[0]]
         elif item[0] == 'Y':
-            pass
+            total += occurrences*prices[item[0]]
         elif item[0] == 'Z':
-            pass
+            total += occurrences*prices[item[0]]
         else:
             return -1
     return total
+
 
