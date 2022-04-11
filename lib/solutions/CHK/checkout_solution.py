@@ -12,6 +12,7 @@ def checkout(skus):
         'C':20,
         'D':15,
         'E':40,
+        'F':10,
     }
     total = 0
     for item in skus:
@@ -21,6 +22,11 @@ def checkout(skus):
     b_to_remove = (skus.count('E')) // 2
     for i in range(b_to_remove):
         skus = skus.replace('B','',1)
+
+    f_to_remove = (skus.count('F')) // 3
+    for i in range(f_to_remove):
+        skus = skus.replace('F','',1)
+
     for item in prices.items():
         occurrences = skus.count(item[0])
         if item[0] == 'A':
