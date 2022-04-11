@@ -47,6 +47,8 @@ def checkout(skus):
     for i in range(f_to_remove):
         skus = skus.replace('F','',1)
 
+
+
     for item in prices.items():
         occurrences = skus.count(item[0])
         if item[0] == 'A':
@@ -74,6 +76,47 @@ def checkout(skus):
             total += occurrences*prices[item[0]]
         elif item[0] == 'F':
             total += occurrences*prices[item[0]]
+        elif item[0] == 'G':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'H':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'I':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'J':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'K':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'L':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'M':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'N':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'O':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'P':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'Q':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'R':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'S':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'T':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'U':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'V':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'W':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'X':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'Y':
+            total += occurrences*prices[item[0]]
+        elif item[0] == 'Z':
+            total += occurrences*prices[item[0]]
         else:
             return -1
     return total
+
