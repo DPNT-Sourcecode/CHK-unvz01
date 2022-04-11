@@ -7,9 +7,9 @@ def compute_groups(skus,prices):
     occs = (skus.count('S') + skus.count('T') + skus.count('X') +
             skus.count('Y') + skus.count('Z'))
     if occs < 3:
-        return sku
-    
-
+        return 0,skus
+    else:
+        pass
 
 def checkout(skus):
     prices = {
@@ -31,7 +31,7 @@ def checkout(skus):
         'P':50,
         'Q':30,
         'R':50,
-        'S':30,
+        'S':20,
         'T':20,
         'U':40,
         'V':50,
@@ -156,5 +156,6 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
 
