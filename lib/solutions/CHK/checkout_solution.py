@@ -7,6 +7,7 @@ def compute_groups(skus):
     total = 0
     occs = (skus.count('S') + skus.count('T') + skus.count('X') +
             skus.count('Y') + skus.count('Z'))
+    print(occs)
     if occs < 3:
         return 0,skus
     else:
@@ -15,6 +16,7 @@ def compute_groups(skus):
         for i in range(occs // 3):
             for a in range(3):
                 # Z> S > T > X
+            print(skus)
                 if 'Z' in skus:
                     skus = skus.replace('Z','',1)
                     continue
@@ -27,8 +29,8 @@ def compute_groups(skus):
                 if 'X' in skus:
                     skus = skus.replace('X','',1)
                     continue
+
             total += 45
-        print(total,skus)
     return total,skus
 
 
