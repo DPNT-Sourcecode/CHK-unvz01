@@ -130,7 +130,7 @@ def checkout(skus):
             total += occurrences*prices[item[0]]
         elif item[0] == 'K':
             if occurrences >= 2:
-                total += 150*(occurrences//2) + (prices[item[0]]*(occurrences%2))
+                total += 120*(occurrences//2) + (prices[item[0]]*(occurrences%2))
             else:
                 total += occurrences*prices[item[0]]
         elif item[0] == 'L':
@@ -177,3 +177,4 @@ def checkout(skus):
         else:
             return -1
     return total
+
