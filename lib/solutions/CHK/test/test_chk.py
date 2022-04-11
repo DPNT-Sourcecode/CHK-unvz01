@@ -8,10 +8,10 @@ def test_basket_2():
     assert chk.checkout('AAABCD') == 195
 
 def test_basket_3():
-    assert chk.checkout('ABCDF') == -1
+    assert chk.checkout('ABCDFGT') == -1
 
 def test_basket_4():
-    assert chk.checkout('ABCDF') == -1
+    assert chk.checkout('ABCDFG') == -1
 
 def test_basket_5():
     assert chk.checkout('AAAA') == 180

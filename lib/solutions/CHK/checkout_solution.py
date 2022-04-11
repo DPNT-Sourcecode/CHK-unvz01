@@ -52,7 +52,10 @@ def checkout(skus):
             total +=  occurrences*prices[item[0]]
         elif item[0] == 'E':
             total += occurrences*prices[item[0]]
+        elif item[0] == 'F':
+            total += occurrences*prices[item[0]]
         else:
             return -1
     return total
+
 
