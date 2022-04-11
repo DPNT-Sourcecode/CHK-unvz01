@@ -47,7 +47,17 @@ def checkout(skus):
     for i in range(f_to_remove):
         skus = skus.replace('F','',1)
 
+    m_to_remove = (skus.count('N')) // 3
+    for i in range(m_to_remove):
+        skus = skus.replace('M','',1)
 
+    q_to_remove = (skus.count('R')) // 3
+    for i in range(q_to_remove):
+        skus = skus.replace('Q','',1)
+
+    u_to_remove = (skus.count('U')) // 3
+    for i in range(u_to_remove):
+        skus = skus.replace('U','',1)
 
     for item in prices.items():
         occurrences = skus.count(item[0])
@@ -79,7 +89,10 @@ def checkout(skus):
         elif item[0] == 'G':
             total += occurrences*prices[item[0]]
         elif item[0] == 'H':
-            total += occurrences*prices[item[0]]
+            if occurrences >= 5:
+                
+            else:
+                total += occurrences*prices[item[0]]
         elif item[0] == 'I':
             total += occurrences*prices[item[0]]
         elif item[0] == 'J':
@@ -119,4 +132,5 @@ def checkout(skus):
         else:
             return -1
     return total
+
 
