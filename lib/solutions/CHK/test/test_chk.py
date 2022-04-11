@@ -68,6 +68,7 @@ def test_basket_22():
     assert chk.checkout('VVVV') == 180
 
 def test_basket_23():   
-    assert chk.checkout('VVVVVV') == 180
+    assert chk.checkout('VVVVVV') == 260
+
 
 
