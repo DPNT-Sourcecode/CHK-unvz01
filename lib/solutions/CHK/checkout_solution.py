@@ -18,7 +18,7 @@ def checkout(skus):
         if item not in prices:
             return -1
     
-    b_to_remove = (skus.count('EE')) // 2
+    b_to_remove = (skus.count('E')) // 2
     for i in range(b_to_remove):
         skus = skus.replace('B','',1)
     for item in prices.items():
@@ -49,3 +49,4 @@ def checkout(skus):
         else:
             return -1
     return total
+
