@@ -15,6 +15,7 @@ def compute_groups(skus):
         for i in range(occs // 3):
             for a in range(3):
                 # Z> S > T > X
+                print(skus)
                 if 'Z' in skus:
                     skus = skus.replace('Z','',1)
                     continue
